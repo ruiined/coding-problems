@@ -1,0 +1,20 @@
+{
+  "name": "coding-problems",
+  "version": "1.0.0",
+  "description": "Coding problems from various sources",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.192",
+    "@types/node": "^18.15.10",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ts-node": "^10.9.1"
+  }
+}
