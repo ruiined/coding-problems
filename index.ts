@@ -1,2 +1,1 @@
-console.log("hoi");
-console.log("boi");
+import "./typescript/001_two_sum";
