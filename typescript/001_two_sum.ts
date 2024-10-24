@@ -35,21 +35,23 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 */
 
-const twoSum = (nums: number[], target: number): [number, number] => {
-  const hashMap: { [key: number]: number } = {};
+const twoSum = (nums: number[], target: number): number[] => {
+  const pairs: Record<number, number> = {};
+  const solution: number[] = [];
 
-  for (let i = 0; i < nums.length; i++) {
+  for (let i = 0; i < nums.length || !solution.length; i++) {
     const num = nums[i];
-    const complement = target - num;
+    const pair = target - num;
+    const match = pairs[num];
 
-    if (hashMap[complement] !== undefined) {
-      return [hashMap[complement], i];
+    if (match || match === 0) {
+      solution.push(...[match, i]);
+    } else {
+      pairs[pair] = i;
     }
-
-    hashMap[num] = i;
   }
 
-  throw new Error("No two sum solution");
+  return solution;
 };
 
 /*
