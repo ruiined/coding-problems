@@ -1,0 +1,24 @@
+{
+  "plugins": ["@typescript-eslint", "prettier"],
+  "ignorePatterns": ["node_modules"],
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "import/no-unresolved": "warn",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "import/named": "off",
+    "no-nested-ternary": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}

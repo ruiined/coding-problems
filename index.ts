@@ -1,3 +1,16 @@
 import "./typescript/001_two_sum";
 import "./typescript/002_roman_to_int";
 import "./typescript/003_longest_common_prefix";
+import "./typescript/004_single_number";
+import "./typescript/005_merge_alternately";
+import "./typescript/006_can_place_flowers";
+import "./typescript/007_kids_with_candies";
+import "./typescript/008_greatest_common_divisor";
+import "./typescript/009_find_difference";
+import "./typescript/010_unique_occurences";
+import "./typescript/011_reverse_vowels";
+import "./typescript/012_close_strings";
+import "./typescript/013_largest_altitude";
+import "./typescript/014_move_zeroes";
+import "./typescript/015_find_hacker_email";
+import "./typescript/016_pilot_a_rocket";
