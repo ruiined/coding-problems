@@ -23,16 +23,17 @@ const findHackerEmail = (emails: string[]): string => {
     emailCount[email] = (emailCount[email] ?? 0) + 1;
   });
 
-  const suspect: { email: string; count: number } = { email: "", count: 0 };
+  let suspect = "";
+  let max = 0;
 
   for (const email in emailCount) {
-    if (emailCount[email] > suspect.count) {
-      suspect.email = email;
-      suspect.count = emailCount[email];
+    if (emailCount[email] > max) {
+      suspect = email;
+      max = emailCount[email];
     }
-  };
+  }
 
-  return suspect.email;
+  return suspect;
 };
 
 /*
